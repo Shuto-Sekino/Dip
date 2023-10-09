@@ -20,22 +20,37 @@
         <ul class="list-unstyled ps-0">
             <li class="mb-1">
                 <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                    data-bs-target="#home-collapse" aria-expanded="true">
+                    data-bs-target="#home-collapse" aria-expanded="false">
                     Programming
                 </button>
-                <div class="collapse show" id="home-collapse">
+                <div class="collapse" id="home-collapse">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                         <li class="d-flex flex-row"><a href="#" id="addDocstringBtn"  class="link-dark rounded">関数の説明文を作成</a></li>
+                        <li class="d-flex flex-row"><a href="#" id="modifyCordingBtn"  class="link-dark rounded">コーディング規則に従って修正</a></li>
+                        <li class="d-flex flex-row"><a href="#" id="genMermaidFlowchartBtn"  class="link-dark rounded">Mermaid フローチャートの作成</a></li>
+                        <!-- <li class="d-flex flex-row"><a href="#" id="genMermaidStateFlowchartBtn"  class="link-dark rounded">状態遷移表から Mermaid 状態遷移図を作成</a></li> -->
                         <li class="d-flex flex-row"><a href="#" id="translateCommentToJpnBtn" class="link-dark rounded">コメント文を日本語に置換</a></li>
+                        <li class="d-flex flex-row"><a href="#" id="translateCommentToEngBtn" class="link-dark rounded">コメント文を英語に置換</a></li>
                     </ul>
                 </div>
             </li>
             <li class="mb-1">
                 <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                    data-bs-target="#dashboard-collapse" aria-expanded="false">
-                    Translate
+                    data-bs-target="#converter-collapse" aria-expanded="false">
+                    Converter
                 </button>
-                <div class="collapse" id="dashboard-collapse">
+                <div class="collapse" id="converter-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li class="d-flex flex-row"><a href="#" id="convertToCcodeBtn"  class="link-dark rounded">C言語に変換</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#translation-collapse" aria-expanded="false">
+                    Translation
+                </button>
+                <div class="collapse" id="translation-collapse">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                         <li class="d-flex flex-row"><a href="#" id="translateToEngBtn"  class="link-dark rounded">英語に翻訳</a></li>
                         <li class="d-flex flex-row"><a href="#" id="translateToJpnBtn"  class="link-dark rounded">日本語に翻訳</a></li>
@@ -44,10 +59,10 @@
             </li>
             <li class="mb-1">
                 <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                    data-bs-target="#orders-collapse" aria-expanded="false">
+                    data-bs-target="#others-collapse" aria-expanded="false">
                     Others
                 </button>
-                <div class="collapse" id="orders-collapse">
+                <div class="collapse" id="others-collapse">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                         <li class="d-flex flex-row"><a href="#" class="link-dark rounded">New</a></li>
                         <li class="d-flex flex-row"><a href="#" class="link-dark rounded">Processed</a></li>
@@ -57,7 +72,7 @@
                 </div>
             </li>
             <li class="border-top my-3"></li>
-            <li class="mb-1">
+            <!-- <li class="mb-1">
                 <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
                     data-bs-target="#account-collapse" aria-expanded="false">
                     Account
@@ -70,7 +85,7 @@
                         <li><a href="#" class="link-dark rounded">Sign out</a></li>
                     </ul>
                 </div>
-            </li>
+            </li> -->
         </ul>
     </div>
 
